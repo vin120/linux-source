@@ -1,0 +1,9 @@
+#!/bin/sh
+
+WHOAMI=`whoami`
+
+PID=`ps -u $WHOAMI | grep signd | awk '{print $1}'`
+
+if (test "$PID" = "") then
+	./signd
+fi

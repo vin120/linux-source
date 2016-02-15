@@ -1,0 +1,15 @@
+
+栈  stack : 局部变量，自动变量 ，函数的形参 
+
+堆  heap : 全局变量， 静态变量, 用malloc或者new 申请的内存
+
+代码空间 Code : 可执行代码
+
+
+__stdcall(standard calling)
+
+__cdecl(C default calling)
+
+int __attribute__((stdcall)) abc(int a, int b)
+int __attribute__((cdecl)) abc(int a, int b)
+
